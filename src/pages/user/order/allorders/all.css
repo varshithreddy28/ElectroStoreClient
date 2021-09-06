@@ -1,0 +1,68 @@
+.puchasePdt {
+  background-color: white;
+  margin: 25px 0;
+  border-radius: 15px;
+  padding: 2rem 2rem 2rem 3rem;
+  display: grid;
+  grid-template-columns: 0.2fr 1fr;
+  grid-gap: 25px;
+  box-shadow: 0 0 10px rgb(0 0 0 / 15%);
+}
+.pdtImageOrder img {
+  height: 92px;
+}
+.pdtImageOrder {
+  /* display: grid; */
+  /* grid-gap: 15px; */
+  display: flex;
+  justify-content: center;
+}
+.purchaseDiscription {
+  display: grid;
+  grid-gap: 5px;
+}
+.pedtPrice {
+  text-align: center;
+  display: grid;
+}
+#productNameOrder {
+  font-weight: 600;
+}
+.receipt {
+  display: flex;
+  justify-content: flex-end;
+}
+.orderHeadding {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-top: 15px;
+  color: gray;
+}
+.order_Details {
+  display: grid;
+  grid-gap: 6px;
+}
+.col-md-10.offset-md-1.myorders {
+  text-align: -webkit-right;
+}
+img.emptycart {
+  height: 50vh;
+  margin-left: 25%;
+}
+@media only screen and (max-width: 440px) {
+  .puchasePdt {
+    padding: 15px 10px;
+    font-size: 14px;
+  }
+}
+@media only screen and (max-width: 1100px) {
+  img.emptycart {
+    margin-left: 18%;
+  }
+}
+@media only screen and (max-width: 800px) {
+  img.emptycart {
+    width: 70vw;
+    margin-left: 15%;
+  }
+}

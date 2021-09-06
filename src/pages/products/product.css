@@ -1,0 +1,128 @@
+.admin {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 25px;
+}
+.cardProduct.col-md-4 {
+  margin-top: 20px;
+}
+/* .productPage {
+  width: 100%;
+  padding: 3rem;
+  display: grid;
+  grid-template-columns: 0.2fr 1fr;
+  grid-gap: 25px;
+  background-color: white;
+  
+} */
+
+.productPage {
+  width: 100%;
+  padding: 3rem;
+  display: grid;
+  grid-template-columns: 0.3fr 1fr;
+  grid-gap: 1rem;
+  /* background-color: white; */
+  /* margin-top: -2px; */
+}
+.productimg img {
+  height: 100px;
+  display: flex;
+  width: auto;
+  margin: auto;
+}
+.productName {
+  margin: 10px 0;
+  background-color: white;
+  padding: 2rem;
+  box-shadow: 0 0 10px rgb(0 0 0 / 15%);
+  border-radius: 15px;
+  display: grid;
+  grid-template-columns: 0.3fr 1fr 0.2fr;
+  grid-gap: 10px;
+}
+.productView :hover {
+  cursor: pointer;
+}
+.cat :hover {
+  cursor: pointer;
+}
+li.cat {
+  color: darkgray;
+}
+.colors {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.dotSelect {
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  display: table-cell;
+  margin-top: -25px;
+  margin-left: 4em;
+  border: 1px solid;
+}
+.allFilters {
+  background-color: white;
+  padding: 1rem;
+  border-radius: 15px;
+  margin-top: 0.6rem;
+  box-shadow: -1px -3px 12px 3px rgb(0 0 0 / 15%);
+  height: fit-content;
+}
+.pdtColors :hover {
+  cursor: pointer;
+}
+.clearFilters {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+.clearFilters button {
+  /* border: 2px solid #bc9bde; */
+  background: #a76ee470;
+  padding: 4px 8px;
+  border: none;
+  color: white;
+  font-weight: 600;
+  border-radius: 6px;
+}
+.productDetail {
+  display: flex;
+  font-weight: 600;
+  margin-top: 10px;
+  justify-content: center;
+}
+span.productName_ {
+  font-weight: 700;
+  font-style: oblique;
+  font-size: large;
+}
+.pdtDis {
+  margin-top: 15px;
+  font-weight: 400;
+  color: #696767eb;
+}
+@media (max-width: 870px) {
+  .productPage {
+    display: block;
+  }
+}
+@media (max-width: 500px) {
+  .pdtDis {
+    display: none;
+  }
+  .productName {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  span.productName_ {
+    font-weight: 600;
+    font-size: small;
+  }
+}

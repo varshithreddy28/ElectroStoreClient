@@ -1,0 +1,138 @@
+.carthead {
+  margin-top: 3rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.itemName {
+  margin: 10px 0;
+  background-color: white;
+  padding: 2rem;
+  box-shadow: 0 0 10px rgb(0 0 0 / 15%);
+  border-radius: 15px;
+  display: grid;
+  grid-template-columns: 1fr 0.1fr;
+}
+.itemimg img {
+  height: 90px;
+}
+
+.itemimg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.changeItem {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.minus {
+  background-color: transparent;
+  border: none;
+}
+
+.plus {
+  background-color: transparent;
+  border: none;
+}
+
+.itemName_ {
+  font-size: x-large;
+  font-weight: 600;
+}
+
+#minus {
+  font-size: smaller;
+}
+
+#plus {
+  font-size: smaller;
+}
+.qty {
+  padding: 0 6px;
+}
+button#buyBtnCart {
+  padding: 0rem 2rem;
+  border: none;
+  color: white;
+  background-color: #fb641b;
+  border-radius: 10px;
+  height: 3rem;
+  /* width: 100%; */
+}
+div#buyBtnOrder {
+  display: flex;
+  justify-content: flex-end;
+}
+.EmptyCart img {
+  height: 38%;
+}
+.EmptyCart {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+.EmptyCart_data {
+  text-align: center;
+  margin-top: 2rem;
+}
+button.add_items_cart {
+  border: 1px solid #bc9bde;
+  padding: 6px 15px;
+  background: #bc9bde;
+  color: white;
+  border-radius: 6px;
+}
+.EmptyCart_data p {
+  color: #959494;
+}
+.itemDetail {
+  margin-top: 10px;
+  color: lightslategray;
+}
+.cartItem:hover {
+  cursor: pointer;
+}
+@media only screen and (max-width: 480px) {
+  .itemName {
+    font-size: large;
+    padding: 1rem;
+  }
+  .itemName_ {
+    font-size: smaller;
+  }
+  .itemimg {
+    padding-left: 5px;
+  }
+  .minus {
+    font-size: small;
+  }
+  .plus {
+    font-size: small;
+  }
+  .itemPrice {
+    font-size: medium;
+  }
+  #minus {
+    margin-top: 10px;
+  }
+  #plus {
+    margin-top: 10px;
+  }
+  .EmptyCart img {
+    height: 28%;
+  }
+}
+@media only screen and (min-width: 780px) {
+  .itemName {
+    font-size: large;
+  }
+  .itemName_ {
+    font-size: large;
+    margin-right: 15px;
+  }
+}

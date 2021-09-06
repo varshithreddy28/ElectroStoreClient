@@ -1,0 +1,43 @@
+.orderHeader {
+  font-size: 2.5rem;
+  font-weight: 300;
+  color: gray;
+  text-align: center;
+  margin: 25px 0;
+}
+.orderdetails {
+  background-color: white;
+  padding: 1.5rem;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgb(0 0 0 / 12%);
+}
+.orderbody {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 30px;
+}
+span.username {
+  font-weight: inherit;
+  color: #000000b3;
+}
+.orderedAt {
+  font-weight: inherit;
+  color: #000000b3;
+}
+.info {
+  text-align: right;
+}
+
+@media only screen and (max-width: 460px) {
+  .orderbody {
+    display: block;
+  }
+  .orderdetails {
+    margin-top: 25px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .orderbody {
+    grid-template-columns: 1fr 1fr;
+  }
+}

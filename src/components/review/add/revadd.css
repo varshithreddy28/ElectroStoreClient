@@ -1,0 +1,141 @@
+input#add {
+  border: 0;
+  outline: 0;
+  background: transparent;
+  border-bottom: 1px solid black;
+  width: 85%;
+}
+.revadd {
+  display: grid;
+  margin: 20px 0;
+  background-color: white;
+  border-radius: 15px;
+  padding: 2rem;
+  box-shadow: 0 0 10px rgb(0 0 0 / 12%);
+}
+.addrev {
+  display: flex;
+  justify-content: space-between;
+}
+.review {
+  display: grid;
+  grid-template-columns: 1fr 0.1fr;
+  margin: 10px;
+}
+.revBtns {
+  display: flex;
+  gap: 25px;
+  /* justify-content: space-between; */
+}
+span.revowner {
+  font-style: italic;
+  margin-right: 5px;
+  font-weight: 600;
+}
+.reviews {
+  background-color: white;
+  padding: 2rem;
+  max-height: 20rem;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgb(0 0 0 / 12%);
+  margin: 30px 0;
+  overflow-y: scroll;
+}
+button.editrev {
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  height: 36px;
+  width: 110px;
+  border-radius: 10px;
+  -webkit-justify-content: center;
+  justify-content: center;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  grid-gap: 6px;
+  gap: 6px;
+  background-color: black;
+}
+button.deleteRev {
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  height: 36px;
+  width: 110px;
+  border-radius: 10px;
+  -webkit-justify-content: center;
+  justify-content: center;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  grid-gap: 6px;
+  gap: 6px;
+  background-color: red;
+}
+button.editrev img {
+  margin-top: 4px;
+}
+span.revRating p {
+  margin-bottom: 0;
+}
+.rating {
+  display: flex;
+  align-items: stretch;
+  justify-content: flex-start;
+}
+label#revaddlable {
+  font-size: 1.5rem;
+}
+h4#ratingHead {
+  margin-right: 2rem;
+  margin-top: 2px;
+}
+@media only screen and (max-width: 800px) {
+  .review {
+    /* display: block; */
+  }
+  button.deleteRev {
+    /* height: 30px;
+    width: 85px; */
+    margin: 15px 15px 0 15px;
+    padding: 6px;
+  }
+  button.editrev {
+    /* height: 30px;
+    width: 85px; */
+    margin: 15px 15px 0 15px;
+    padding: 6px 10px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .review {
+    display: block;
+  }
+}
+@media only screen and (max-width: 360px) {
+  button.editrev img {
+    display: none;
+  }
+  button.deleteRev img {
+    display: none;
+  }
+}
+/* Stars */
+
+input[type="radio"] {
+  display: none;
+}
+.star:hover {
+  cursor: pointer;
+  transition: color 200ms;
+}
+.star i.fas.fa-star {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+.star:hover {
+  color: gold;
+}

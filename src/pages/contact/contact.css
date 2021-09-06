@@ -1,0 +1,47 @@
+.contact {
+  width: 100%;
+  display: grid;
+  padding: 1rem 2rem;
+  margin-top: 12%;
+}
+.row1_contact.form-row {
+  display: flex;
+  justify-content: space-between;
+}
+.send_message {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+.contact_details {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+h4#contact_us {
+  text-align: center;
+  margin-bottom: revert;
+}
+button#submit_contact {
+  border: 2px solid white;
+  padding: 0.5rem 2rem;
+  background: #bc9bde;
+  color: white;
+  border-radius: 8px;
+}
+.inputsGroup {
+  display: grid;
+}
+.inputsGroup input[type="text"] {
+  /* display: grid; */
+  border: 1px solid darkgray;
+  padding: 5px;
+  border-radius: 4px;
+}
+.inputsGroup input[type="number"] {
+  /* display: grid; */
+  border: 1px solid darkgray;
+  padding: 5px;
+  border-radius: 4px;
+}

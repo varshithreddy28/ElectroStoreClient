@@ -1,0 +1,31 @@
+.buyBtns {
+  margin: 30px 0 0 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 25px;
+}
+button#cartBtn {
+  /* padding: 1rem 2rem; */
+  border: none;
+  color: white;
+  background-color: #ff9f00;
+  border-radius: 10px;
+  height: 3rem;
+}
+button#buyBtn {
+  /* padding: 1rem 2rem; */
+  border: none;
+  color: white;
+  background-color: #fb641b;
+  border-radius: 10px;
+  height: 3rem;
+  width: 100%;
+}
+.TestModeInfo-LegacyWarningBadge {
+  display: none;
+}
+@media only screen and (max-width: 500px) {
+  .buyBtns {
+    grid-template-columns: 1fr;
+  }
+}

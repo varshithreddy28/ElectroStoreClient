@@ -1,0 +1,43 @@
+.login {
+  position: absolute;
+  top: 24%;
+  left: 36%;
+  width: 400px;
+}
+h3.loginHeader {
+  text-align: center;
+  margin: 20px 0;
+}
+button.submitLogin.btn.btn-secondary {
+  background-color: black;
+  width: 100%;
+  margin-top: 20px;
+}
+p.welcome {
+  text-align: center;
+  letter-spacing: 2px;
+  color: lightslategray;
+  /* margin-bottom: 2px; */
+}
+.loginInput {
+  margin: 20px 0;
+}
+.alert_signUp {
+  margin-top: 30px;
+  text-align: center;
+}
+
+@media only screen and (max-width: 800px) {
+  .login {
+    left: 20%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .login {
+    position: relative;
+    margin-top: 10%;
+    width: initial;
+    top: auto;
+    left: auto;
+  }
+}

@@ -1,0 +1,126 @@
+/* .navbar {
+  background-color: rgba(180, 140, 218, 0.856);
+} */
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+nav {
+  background: rgba(180, 140, 218, 0.856);
+  height: 80px;
+  width: 100%;
+}
+label.logo {
+  color: white;
+  font-size: 35px;
+  line-height: 80px;
+  padding: 0 100px;
+  font-weight: 400;
+}
+nav ul {
+  float: right;
+  margin-right: 20px;
+}
+nav ul li {
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+nav ul li a {
+  color: white;
+  font-size: 17px;
+  text-transform: uppercase;
+  padding: 7px 13px;
+  border-radius: 3px;
+}
+nav ul li a.active,
+nav ul li a:hover {
+  background: rgba(208, 181, 235, 0.993);
+  transition: 0.5s;
+  color: white;
+}
+a {
+  text-decoration: none;
+}
+.checkbtn {
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+#check {
+  display: none;
+}
+.userStyle button {
+  color: white;
+}
+.userStyle button:hover {
+  color: white;
+}
+
+.bottomNav {
+  background-color: #333;
+  overflow: hidden;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+@media (max-width: 952px) {
+  label.logo {
+    font-size: 30px;
+    padding: 0 1.5rem;
+  }
+  nav ul li a {
+    font-size: 16px;
+  }
+}
+@media (max-width: 858px) {
+  .checkbtn {
+    display: block;
+  }
+  ul {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #2c3e50;
+    top: 80px;
+    left: 0;
+    text-align: center;
+    left: -100%;
+    transition: all 0.5s;
+    z-index: 1000;
+  }
+  nav ul li {
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  nav ul li a {
+    font-size: 20px;
+  }
+  nav ul li a:hover,
+  nav ul li a.active {
+    background: none;
+    color: rgba(180, 140, 218, 0.856);
+  }
+  #check:checked ~ ul {
+    left: 0;
+  }
+  .fa-bars:before {
+    font-size: 1.5rem;
+  }
+  label.logo {
+    font-size: 1.5rem;
+  }
+}
