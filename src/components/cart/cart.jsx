@@ -340,10 +340,10 @@ export const Cart = ({ user, products, cartItem, setCartItems }) => {
                     <div className="cartItem">
                       <div className="itemName">
                         <div
-                          onClick={() => handleViewPdt(product._id)}
+                          
                           className=""
                         >
-                          <span className="itemName_">{product.name}</span>
+                          <span onClick={() => handleViewPdt(product._id)} className="itemName_">{product.name}</span>
                           <div className="itemDetail">
                             <span className="itemPrice">
                               Price: ₹{product.price} (Per Unit)
