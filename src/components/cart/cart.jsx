@@ -411,14 +411,16 @@ export const Cart = ({ user, products, cartItem, setCartItems }) => {
           ) : !userPresent && product && product.length > 0 ? (
             product.map((item, i) => {
               return (
-                <div
-                  className="col-md-8 offset-md-2"
-                  onClick={() => handleViewPdt(item.product._id)}
-                >
+                <div className="col-md-8 offset-md-2">
                   <div className="cartItem">
                     <div className="itemName">
                       <div className="">
-                        <span className="itemName_">{item.product.name}</span>
+                        <span
+                          onClick={() => handleViewPdt(item.product._id)}
+                          className="itemName_"
+                        >
+                          {item.product.name}
+                        </span>
                         <div className="itemDetail">
                           <span className="itemPrice">
                             Price: ₹{item.product.price}
