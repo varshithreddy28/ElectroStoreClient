@@ -17,7 +17,7 @@ import { connect } from "react-redux";
 import laptop from "../../assets/laptop.jpg";
 import { Link } from "react-router-dom";
 
-import Loading from "../../components/loading/loading";
+import LoadingHome from "../../components/loadingHome/loading";
 
 import { setAllProducts } from "../../actions/product";
 
@@ -44,7 +44,7 @@ const Home = (props) => {
     },
     {
       icon: "fas fa-shield-alt",
-      header: "Transparent",
+      header: "Security",
       details:
         "Our private carriage ensure your order's safety. Breaking your package is equivalent to breaking our own heart!",
     },
@@ -196,8 +196,8 @@ const Home = (props) => {
         </div>
 
         {loading ? (
-          <div className="loading_ani1">
-            <Loading />
+          <div>
+            <LoadingHome />
           </div>
         ) : (
           ""
