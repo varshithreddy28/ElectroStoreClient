@@ -150,6 +150,7 @@ export const Cart = ({ user, products, cartItem, setCartItems }) => {
           selected.totalPrice = selected.totalPrice - price;
           setAllpdts(selected);
           updatedPdt.splice(i, 1);
+          console.log(updatedPdt);
           setProduct([...updatedPdt]);
         } else {
           let selected = allpdts;
@@ -209,7 +210,6 @@ export const Cart = ({ user, products, cartItem, setCartItems }) => {
   }, [product]);
 
   const handleBuy = () => {
-    console.log(history);
     if (!userPresent) {
       history.push("/login", { from: history.location.pathname });
     } else {
@@ -218,7 +218,6 @@ export const Cart = ({ user, products, cartItem, setCartItems }) => {
   };
 
   const makePament = async (token, args) => {
-    console.log(args);
     if (user) {
       let address = {};
       let body = {};
@@ -272,13 +271,9 @@ export const Cart = ({ user, products, cartItem, setCartItems }) => {
         setMessage(error.message);
       }
     } else {
-      console.log("Please Login");
+      setMessage("Please Login");
     }
   };
-
-  useEffect(() => {
-    console.log(allpdts.totalPrice, "IS total PRice of  xart");
-  }, [allpdts]);
 
   const handleViewPdt = (id) => {
     history.push(`/product/${id}`);
