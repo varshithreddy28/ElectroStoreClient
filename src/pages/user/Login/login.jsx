@@ -176,7 +176,7 @@ function Login(props) {
           <div className="loginInput">
             <FormGroup className="mb-2 mr-sm-2 mb-sm-0">
               <Label for="exampleEmail" className="mr-sm-2">
-                Email
+                User Name
               </Label>
               <Input
                 onChange={handleChange}
@@ -199,7 +199,7 @@ function Login(props) {
                 type="password"
                 name="password"
                 id="examplePassword"
-                placeholder="don't tell!"
+                placeholder="Password"
               />
             </FormGroup>
           </div>

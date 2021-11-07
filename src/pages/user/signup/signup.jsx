@@ -29,6 +29,10 @@ function SignUp(props) {
     "HANG ON!LOADING DATA"
   );
 
+  // PasswordErr
+  let passwordErr =
+    "/^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*])(?=.{8,})/";
+
   const register_user =
     "https://electro--store.herokuapp.com/api/v1/user/register";
   const user_details =
@@ -68,7 +72,17 @@ function SignUp(props) {
       const response = await axios.post(register_user, details);
       if (!response.data.success) {
         setVisible(true);
-        setMessage(response.data.message);
+        // console.log(
+        //   response.data.message,
+        //   response.data.message.includes(passwordErr)
+        // );
+        if (response.data.message.includes(passwordErr)) {
+          setMessage(
+            "Password must contain atleast length of 8 Characters and must contain-1 UpperCase,1 LowerCase,1 Special Charecter and 1 Number"
+          );
+        } else {
+          setMessage(response.data.message);
+        }
       } else {
         localStorage.setItem("token", `bearer ${response.data.token}`);
         try {
@@ -79,16 +93,16 @@ function SignUp(props) {
               authorization: localStorage.getItem("token"),
             },
           });
-          console.log(response.data);
+          // console.log(response.data);
           if (!response.data.success) {
             setVisible(true);
             setMessage(response.data.message);
           } else {
             setUser(response.data.message);
             const items = JSON.parse(localStorage.getItem("cart"));
-            console.log(items);
+            // console.log(items);
             // console.log(items != null, items.length != 0);
-            console.log(items != null && items != []);
+            // console.log(items != null && items != []);
 
             if (items != null && items.length != 0) {
               setUpdatingMessage("UPDATING CART PLEASE WAIT");
@@ -98,9 +112,8 @@ function SignUp(props) {
                 cartitems.push(newObj);
               });
               await addCartItem(cartitems);
-              console.log(cartitems, "........");
             } else {
-              console.log("No items in cart");
+              // console.log("No items in cart");
             }
             history.push("/");
           }
@@ -108,12 +121,11 @@ function SignUp(props) {
           setVisible(true);
           setMessage(response.data.message);
         }
-        console.log(response.data);
       }
     } catch (error) {
-      console.log(error.message);
+      setVisible(true);
+      setMessage(error.message);
     }
-    console.log("Clicked on sig up");
   };
   const onDismiss = () => setVisible(false);
   const handleChange = (e) => {
@@ -201,7 +213,7 @@ function SignUp(props) {
                 type="password"
                 name="password"
                 id="password"
-                placeholder="don't tell!"
+                placeholder="Password"
               />
             </FormGroup>
           </div>
