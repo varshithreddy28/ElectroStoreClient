@@ -44,7 +44,7 @@ const Home = (props) => {
     },
     {
       icon: "fas fa-shield-alt",
-      header: "Security",
+      header: "Reliable",
       details:
         "Our private carriage ensure your order's safety. Breaking your package is equivalent to breaking our own heart!",
     },
