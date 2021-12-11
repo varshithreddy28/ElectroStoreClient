@@ -37,7 +37,6 @@ Admin has all the controls over the Reviews posted by the clients.
 <a href="https://electro--store.herokuapp.com/api/v1/product/">API_ELECTROSTORE</a>
 
 <a href="https://electro-store.netlify.app/">ELECTROSTORE_CLIENT</a>
-
 #### Requirements to run :
 
 1. NodeJs,
