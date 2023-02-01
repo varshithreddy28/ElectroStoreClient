@@ -50,7 +50,7 @@ export const EditForm = (props) => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const editUrl = `https://electro--store.herokuapp.com/api/v1/product/edit/${details._id}`;
+    const editUrl = `https://electrostore-zqml.onrender.com/api/v1/product/edit/${details._id}`;
     try {
       const response = await axios({
         method: "patch",

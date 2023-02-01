@@ -13,7 +13,7 @@ import "./admin.css";
 
 function Admin({ setBoughtProducts, setBoughtUsers, orders }) {
   const allOrders_URL =
-    "https://electro--store.herokuapp.com/api/v1/user/allorders";
+    "https://electrostore-zqml.onrender.com/api/v1/user/allorders";
   const dispatch = useDispatch();
 
   const [message, setMessage] = useState("");

@@ -29,9 +29,9 @@ function Login(props) {
   const [user, setUser] = useState("");
   const [cart, setCart] = useState([]);
 
-  const login_user = "https://electro--store.herokuapp.com/api/v1/user/login";
+  const login_user = "https://electrostore-zqml.onrender.com/api/v1/user/login";
   const user_details =
-    "https://electro--store.herokuapp.com/api/v1/user/details";
+    "https://electrostore-zqml.onrender.com/api/v1/user/details";
   const handleLogin = async (e) => {
     e.preventDefault();
     setUpdating(true);
@@ -40,7 +40,7 @@ function Login(props) {
     // console.log(email);
 
     const addCartItem = async (cartitems) => {
-      const addCartUrl = `https://electro--store.herokuapp.com/api/v1/user/cart/local/add`;
+      const addCartUrl = `https://electrostore-zqml.onrender.com/api/v1/user/cart/local/add`;
       try {
         const response = await axios({
           method: "post",

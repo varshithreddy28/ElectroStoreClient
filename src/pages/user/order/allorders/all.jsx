@@ -11,7 +11,7 @@ import "./all.css";
 export const All = (props) => {
   const history = useHistory();
 
-  const addCartUrl = `https://electro--store.herokuapp.com/api/v1/user/history`;
+  const addCartUrl = `https://electrostore-zqml.onrender.com/api/v1/user/history`;
 
   const [orders, setOrders] = useState(null);
   const [message, setMessage] = useState("");

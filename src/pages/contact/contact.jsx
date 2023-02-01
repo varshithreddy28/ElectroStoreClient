@@ -38,7 +38,9 @@ function Contact() {
       .then((res) => {
         console.log(res.status, "Is response....................");
         if (res.status == 200) {
-          setAlertMessage("Thank's for contacting us!");
+          setAlertMessage(
+            "Thank's for contacting us will get back to you soon!"
+          );
           setName("");
           setCompany("");
           setEmail("");
@@ -47,7 +49,8 @@ function Contact() {
         }
       })
       .catch((err) => {
-        setDangerMessage(err.message);
+        console.log(err);
+        setDangerMessage(err);
       });
   };
 

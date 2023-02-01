@@ -28,9 +28,9 @@ import Products from './pages/products/product'
 import Contact from "./pages/contact/contact";
 
 function App(props) {
-    const viewProducts = "https://electro--store.herokuapp.com/api/v1/product";
-    const user_details = "https://electro--store.herokuapp.com/api/v1/user/details";
-    const addCartUrl = `https://electro--store.herokuapp.com/api/v1/user/cart`;
+    const viewProducts = "https://electrostore-zqml.onrender.com/api/v1/product";
+    const user_details = "https://electrostore-zqml.onrender.com/api/v1/user/details";
+    const addCartUrl = `https://electrostore-zqml.onrender.com/api/v1/user/cart`;
 
 
     const [products, setProducts] = useState({});

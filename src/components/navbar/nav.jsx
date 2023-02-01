@@ -34,7 +34,8 @@ const NavBar = (props) => {
     console.log(location, "HEYYYYY WATCH ME YA!");
   }, []);
   const handleLogout = async () => {
-    const logoutURL = "https://electro--store.herokuapp.com/api/v1/user/logout";
+    const logoutURL =
+      "https://electrostore-zqml.onrender.com/api/v1/user/logout";
     try {
       const res = await axios.get(logoutURL);
       localStorage.clear();

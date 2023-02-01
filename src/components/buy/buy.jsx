@@ -42,7 +42,7 @@ function Buy({ productEdit, user, setCartItems, cartItems }) {
   };
   const getUserCartItem = async () => {
     console.log("I am hitted");
-    const addCartUrl = `https://electro--store.herokuapp.com/api/v1/user/cart`;
+    const addCartUrl = `https://electrostore-zqml.onrender.com/api/v1/user/cart`;
     try {
       const response = await axios({
         method: "get",
@@ -123,7 +123,7 @@ function Buy({ productEdit, user, setCartItems, cartItems }) {
     if (isPresent) {
       return history.push("/cart");
     }
-    const addCartUrl = `https://electro--store.herokuapp.com/api/v1/user/cart/${id}/add`;
+    const addCartUrl = `https://electrostore-zqml.onrender.com/api/v1/user/cart/${id}/add`;
     try {
       const response = await axios({
         method: "post",
@@ -190,7 +190,8 @@ function Buy({ productEdit, user, setCartItems, cartItems }) {
         console.log("Args are not present");
       }
 
-      const paymentUrl = "https://electro--store.herokuapp.com/api/v1/payment";
+      const paymentUrl =
+        "https://electrostore-zqml.onrender.com/api/v1/payment";
       try {
         const response = await axios({
           method: "post",

@@ -14,7 +14,7 @@ import Loading from "../loading/loading";
 import "./cart.css";
 
 export const Cart = ({ user, products, cartItem, setCartItems }) => {
-  const addCartUrl = `https://electro--store.herokuapp.com/api/v1/user/cart`;
+  const addCartUrl = `https://electrostore-zqml.onrender.com/api/v1/user/cart`;
 
   const history = useHistory();
 
@@ -130,7 +130,7 @@ export const Cart = ({ user, products, cartItem, setCartItems }) => {
     const updatingBtn = document.getElementById(`btnM_${id}`);
     updatingBtn.disabled = true;
 
-    const removeCartUrl = `https://electro--store.herokuapp.com/api/v1/user/cart/${id}/delete`;
+    const removeCartUrl = `https://electrostore-zqml.onrender.com/api/v1/user/cart/${id}/delete`;
     try {
       const response = await axios({
         method: "delete",
@@ -171,7 +171,7 @@ export const Cart = ({ user, products, cartItem, setCartItems }) => {
   };
 
   const handleAddUser = async (id, i, price) => {
-    const addCartUrl = `https://electro--store.herokuapp.com/api/v1/user/cart/${id}/add`;
+    const addCartUrl = `https://electrostore-zqml.onrender.com/api/v1/user/cart/${id}/add`;
     const updatingBtn = document.getElementById(`btn_${id}`);
     updatingBtn.disabled = true;
 
@@ -252,7 +252,7 @@ export const Cart = ({ user, products, cartItem, setCartItems }) => {
 
       // console.log(token, ".......", body);
       const paymentUrl =
-        "https://electro--store.herokuapp.com/api/v1/user/placeorder";
+        "https://electrostore-zqml.onrender.com/api/v1/user/placeorder";
       try {
         const response = await axios({
           method: "post",

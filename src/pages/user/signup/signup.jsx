@@ -34,12 +34,12 @@ function SignUp(props) {
     "/^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*])(?=.{8,})/";
 
   const register_user =
-    "https://electro--store.herokuapp.com/api/v1/user/register";
+    "https://electrostore-zqml.onrender.com/api/v1/user/register";
   const user_details =
-    "https://electro--store.herokuapp.com/api/v1/user/details";
+    "https://electrostore-zqml.onrender.com/api/v1/user/details";
 
   const addCartItem = async (cartitems) => {
-    const addCartUrl = `https://electro--store.herokuapp.com/api/v1/user/cart/local/add`;
+    const addCartUrl = `https://electrostore-zqml.onrender.com/api/v1/user/cart/local/add`;
     try {
       const response = await axios({
         method: "post",

@@ -51,7 +51,7 @@ function Product({ product, setEditProduct, user, setAllReviews, cartItems }) {
   // };
   const handleDelete = async (e) => {
     e.preventDefault();
-    const deleteUrl = `https://electro--store.herokuapp.com/api/v1/product/delete/${product._id}`;
+    const deleteUrl = `https://electrostore-zqml.onrender.com/api/v1/product/delete/${product._id}`;
     try {
       const response = await axios({
         method: "delete",
@@ -80,7 +80,7 @@ function Product({ product, setEditProduct, user, setAllReviews, cartItems }) {
   }, [message]);
 
   // const handleAdd = async (e) => {
-  //   const addUrl = `https://electro--store.herokuapp.com/api/v1/product/${product._id}/review/new`;
+  //   const addUrl = `https://electrostore-zqml.onrender.com/api/v1/product/${product._id}/review/new`;
 
   //   try {
   //     const response = await axios({

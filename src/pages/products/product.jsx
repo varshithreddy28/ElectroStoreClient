@@ -35,9 +35,9 @@ const Products = (props) => {
 
   const history = useHistory();
 
-  const viewProducts = "https://electro--store.herokuapp.com/api/v1/product";
+  const viewProducts = "https://electrostore-zqml.onrender.com/api/v1/product";
   const user_details =
-    "https://electro--store.herokuapp.com/api/v1/user/details";
+    "https://electrostore-zqml.onrender.com/api/v1/user/details";
 
   useEffect(() => {
     const response = async () => {

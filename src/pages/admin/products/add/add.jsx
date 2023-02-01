@@ -164,7 +164,7 @@ export const AddProduct = (props) => {
     };
     console.log(addData);
     const newProduct =
-      "https://electro--store.herokuapp.com/api/v1/product/new";
+      "https://electrostore-zqml.onrender.com/api/v1/product/new";
     try {
       const response = await axios({
         method: "post",

@@ -14,7 +14,7 @@ export const View = (props) => {
     const getProductDetails = async () => {
       console.log("Eeeeeeeeeeeeeee");
       const response = await axios.get(
-        `https://electro--store.herokuapp.com/api/v1/product/${id.id}`
+        `https://electrostore-zqml.onrender.com/api/v1/product/${id.id}`
       );
       if (response.data.success) {
         console.log("FFfffffffffff");

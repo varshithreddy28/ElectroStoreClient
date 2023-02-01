@@ -21,7 +21,7 @@ function ViewOrder({ orders, setBoughtProducts, setBoughtUsers }) {
 
   const setAllProducts = async () => {
     const allOrders_URL =
-      "https://electro--store.herokuapp.com/api/v1/user/allorders";
+      "https://electrostore-zqml.onrender.com/api/v1/user/allorders";
 
     try {
       const response = await axios({
@@ -93,7 +93,7 @@ function ViewOrder({ orders, setBoughtProducts, setBoughtUsers }) {
   useEffect(() => {
     if (order && !order[0].isDelivered) {
       const updateOrder = async () => {
-        const orderUpdateURl = `https://electro--store.herokuapp.com/api/v1/order/update/${order[0]._id}`;
+        const orderUpdateURl = `https://electrostore-zqml.onrender.com/api/v1/order/update/${order[0]._id}`;
         try {
           const response = await axios({
             method: "patch",

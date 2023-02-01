@@ -1,7 +1,7 @@
+/* eslint-disable jsx-a11y/img-redundant-alt */
 import React, { useState, useEffect, useRef } from "react";
 import {
   Card as div,
-  CardImg,
   CardText,
   CardBody,
   // CardTitle as div className="cardtitle",
@@ -73,9 +73,9 @@ const Home = (props) => {
 
   const [values, setValues] = useState(ourValues);
 
-  const viewProducts = "https://electro--store.herokuapp.com/api/v1/product";
+  const viewProducts = "https://electrostore-zqml.onrender.com/api/v1/product";
   const user_details =
-    "https://electro--store.herokuapp.com/api/v1/user/details";
+    "https://electrostore-zqml.onrender.com/api/v1/user/details";
 
   useEffect(() => {
     const response = async () => {

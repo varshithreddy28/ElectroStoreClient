@@ -46,7 +46,7 @@ function Revadd({ productView, user, reviews, setAllReviews }) {
   //   console.log(product);
   const getProductDetails = async () => {
     const response = await axios.get(
-      `https://electro--store.herokuapp.com/api/v1/product/${productView._id}`
+      `https://electrostore-zqml.onrender.com/api/v1/product/${productView._id}`
     );
     if (response.data.success) {
       setProduct(response.data.message);
@@ -68,7 +68,7 @@ function Revadd({ productView, user, reviews, setAllReviews }) {
   }, []);
 
   const handleAdd = async (e) => {
-    const addUrl = `https://electro--store.herokuapp.com/api/v1/product/${product._id}/review/new`;
+    const addUrl = `https://electrostore-zqml.onrender.com/api/v1/product/${product._id}/review/new`;
     setLoading(true);
     setVisible(true);
 
@@ -145,7 +145,7 @@ function Revadd({ productView, user, reviews, setAllReviews }) {
   const handleEditRev = async () => {
     setLoading(true);
     setMessage("HANG ON UPDATING DATA!");
-    const editUrl = `https://electro--store.herokuapp.com/api/v1/product/${productView._id}/review/edit/${revId}`;
+    const editUrl = `https://electrostore-zqml.onrender.com/api/v1/product/${productView._id}/review/edit/${revId}`;
     try {
       const response = await axios({
         method: "patch",
@@ -190,7 +190,7 @@ function Revadd({ productView, user, reviews, setAllReviews }) {
     setVisible(true);
 
     setMessage("HANG ON UPDATING DATA!");
-    const delUrl = `https://electro--store.herokuapp.com/api/v1/product/${productView._id}/review/delete/${id}`;
+    const delUrl = `https://electrostore-zqml.onrender.com/api/v1/product/${productView._id}/review/delete/${id}`;
     try {
       const response = await axios({
         method: "delete",
